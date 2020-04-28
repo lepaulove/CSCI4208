@@ -1,0 +1,48 @@
+class BetPhase extends React.Component{
+
+        constructor(props){
+            super(props);
+            this.state = {bet: 90};
+
+        }
+    
+    increase = ()=>{
+        this.setState({bet: ++this.state.bet});
+        // ReactDOM.render(this.betPhaseElement, document.getElementById("root"));
+        console.log(this.state.bet);
+    }
+
+    decrease = ()=>{
+        this.setState({bet: --this.state.bet});
+        console.log(this.state.bet);
+    }
+
+    startGame = ()=>{
+        console.log("START");
+    }
+
+
+    // betPhaseElement = (
+    //     <div>
+    //         <h1>PLACE YOUR BET</h1>
+    //         <p id='jellybean-total'></p>
+    //         <button id='increase-bet' onClick={this.increase}>Increase Bet</button>
+    //         <p id='display-bet'>{this.state.bet}</p>
+    //         <button id='decrease-bet' onClick={this.decrease}>Decrease Bet</button><br></br>
+    //         <button id='place-bet' onClick={this.startGame}>PLACE BET</button>
+    //     </div>
+    // );
+
+    render(){
+        return(
+            <div>
+            <h1>PLACE YOUR BET</h1>
+            <p id='jellybean-total'></p>
+            <button id='increase-bet' type='button' onClick={this.increase}>Increase Bet</button>
+            <p id='display-bet'>{this.state.bet}</p>
+            <button id='decrease-bet' onClick={this.decrease}>Decrease Bet</button><br></br>
+            <button id='place-bet' onClick={this.startGame}>PLACE BET</button>
+        </div>
+        );
+    }
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" href="./localhost_files/bootstrap.min.css">
+    <script src="./localhost_files/react.development.js.download"></script>
+    <script src="./localhost_files/react-dom.development.js.download"></script>
+    <script src="./localhost_files/babel.min.js.download"></script>
+<script>'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BetPhase = function (_React$Component) {
+    _inherits(BetPhase, _React$Component);
+
+    function BetPhase(props) {
+        _classCallCheck(this, BetPhase);
+
+        var _this = _possibleConstructorReturn(this, (BetPhase.__proto__ || Object.getPrototypeOf(BetPhase)).call(this, props));
+
+        _this.increase = function () {
+            _this.setState({ bet: ++_this.state.bet });
+            // ReactDOM.render(this.betPhaseElement, document.getElementById("root"));
+            console.log(_this.state.bet);
+        };
+
+        _this.decrease = function () {
+            _this.setState({ bet: --_this.state.bet });
+            console.log(_this.state.bet);
+        };
+
+        _this.startGame = function () {
+            console.log("START");
+        };
+
+        _this.state = { bet: 90 };
+
+        return _this;
+    }
+
+    _createClass(BetPhase, [{
+        key: 'render',
+
+
+        // betPhaseElement = (
+        //     <div>
+        //         <h1>PLACE YOUR BET</h1>
+        //         <p id='jellybean-total'></p>
+        //         <button id='increase-bet' onClick={this.increase}>Increase Bet</button>
+        //         <p id='display-bet'>{this.state.bet}</p>
+        //         <button id='decrease-bet' onClick={this.decrease}>Decrease Bet</button><br></br>
+        //         <button id='place-bet' onClick={this.startGame}>PLACE BET</button>
+        //     </div>
+        // );
+
+        value: function render() {
+            return React.createElement(
+                'div',
+                null,
+                React.createElement(
+                    'h1',
+                    null,
+                    'PLACE YOUR BET'
+                ),
+                React.createElement('p', { id: 'jellybean-total' }),
+                React.createElement(
+                    'button',
+                    { id: 'increase-bet', type: 'button', onClick: this.increase },
+                    'Increase Bet'
+                ),
+                React.createElement(
+                    'p',
+                    { id: 'display-bet' },
+                    this.state.bet
+                ),
+                React.createElement(
+                    'button',
+                    { id: 'decrease-bet', onClick: this.decrease },
+                    'Decrease Bet'
+                ),
+                React.createElement('br', null),
+                React.createElement(
+                    'button',
+                    { id: 'place-bet', onClick: this.startGame },
+                    'PLACE BET'
+                )
+            );
+        }
+    }]);
+
+    return BetPhase;
+}(React.Component);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJldFBoYXNlLmpzIl0sIm5hbWVzIjpbIkJldFBoYXNlIiwicHJvcHMiLCJpbmNyZWFzZSIsInNldFN0YXRlIiwiYmV0Iiwic3RhdGUiLCJjb25zb2xlIiwibG9nIiwiZGVjcmVhc2UiLCJzdGFydEdhbWUiLCJSZWFjdCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztJQUFNQSxROzs7QUFFRSxzQkFBWUMsS0FBWixFQUFrQjtBQUFBOztBQUFBLHdIQUNSQSxLQURROztBQUFBLGNBTXRCQyxRQU5zQixHQU1YLFlBQUk7QUFDWCxrQkFBS0MsUUFBTCxDQUFjLEVBQUNDLEtBQUssRUFBRSxNQUFLQyxLQUFMLENBQVdELEdBQW5CLEVBQWQ7QUFDQTtBQUNBRSxvQkFBUUMsR0FBUixDQUFZLE1BQUtGLEtBQUwsQ0FBV0QsR0FBdkI7QUFDSCxTQVZxQjs7QUFBQSxjQVl0QkksUUFac0IsR0FZWCxZQUFJO0FBQ1gsa0JBQUtMLFFBQUwsQ0FBYyxFQUFDQyxLQUFLLEVBQUUsTUFBS0MsS0FBTCxDQUFXRCxHQUFuQixFQUFkO0FBQ0FFLG9CQUFRQyxHQUFSLENBQVksTUFBS0YsS0FBTCxDQUFXRCxHQUF2QjtBQUNILFNBZnFCOztBQUFBLGNBaUJ0QkssU0FqQnNCLEdBaUJWLFlBQUk7QUFDWkgsb0JBQVFDLEdBQVIsQ0FBWSxPQUFaO0FBQ0gsU0FuQnFCOztBQUVkLGNBQUtGLEtBQUwsR0FBYSxFQUFDRCxLQUFLLEVBQU4sRUFBYjs7QUFGYztBQUlqQjs7Ozs7O0FBa0JMO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztpQ0FFUTtBQUNKLG1CQUNJO0FBQUE7QUFBQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBREE7QUFFQSwyQ0FBRyxJQUFHLGlCQUFOLEdBRkE7QUFHQTtBQUFBO0FBQUEsc0JBQVEsSUFBRyxjQUFYLEVBQTBCLE1BQUssUUFBL0IsRUFBd0MsU0FBUyxLQUFLRixRQUF0RDtBQUFBO0FBQUEsaUJBSEE7QUFJQTtBQUFBO0FBQUEsc0JBQUcsSUFBRyxhQUFOO0FBQXFCLHlCQUFLRyxLQUFMLENBQVdEO0FBQWhDLGlCQUpBO0FBS0E7QUFBQTtBQUFBLHNCQUFRLElBQUcsY0FBWCxFQUEwQixTQUFTLEtBQUtJLFFBQXhDO0FBQUE7QUFBQSxpQkFMQTtBQUt1RSwrQ0FMdkU7QUFNQTtBQUFBO0FBQUEsc0JBQVEsSUFBRyxXQUFYLEVBQXVCLFNBQVMsS0FBS0MsU0FBckM7QUFBQTtBQUFBO0FBTkEsYUFESjtBQVVIOzs7O0VBOUNrQkMsTUFBTUMsUyIsImZpbGUiOiJCZXRQaGFzZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImNsYXNzIEJldFBoYXNlIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50e1xyXG5cclxuICAgICAgICBjb25zdHJ1Y3Rvcihwcm9wcyl7XHJcbiAgICAgICAgICAgIHN1cGVyKHByb3BzKTtcclxuICAgICAgICAgICAgdGhpcy5zdGF0ZSA9IHtiZXQ6IDkwfTtcclxuXHJcbiAgICAgICAgfVxyXG4gICAgXHJcbiAgICBpbmNyZWFzZSA9ICgpPT57XHJcbiAgICAgICAgdGhpcy5zZXRTdGF0ZSh7YmV0OiArK3RoaXMuc3RhdGUuYmV0fSk7XHJcbiAgICAgICAgLy8gUmVhY3RET00ucmVuZGVyKHRoaXMuYmV0UGhhc2VFbGVtZW50LCBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcInJvb3RcIikpO1xyXG4gICAgICAgIGNvbnNvbGUubG9nKHRoaXMuc3RhdGUuYmV0KTtcclxuICAgIH1cclxuXHJcbiAgICBkZWNyZWFzZSA9ICgpPT57XHJcbiAgICAgICAgdGhpcy5zZXRTdGF0ZSh7YmV0OiAtLXRoaXMuc3RhdGUuYmV0fSk7XHJcbiAgICAgICAgY29uc29sZS5sb2codGhpcy5zdGF0ZS5iZXQpO1xyXG4gICAgfVxyXG5cclxuICAgIHN0YXJ0R2FtZSA9ICgpPT57XHJcbiAgICAgICAgY29uc29sZS5sb2coXCJTVEFSVFwiKTtcclxuICAgIH1cclxuXHJcblxyXG4gICAgLy8gYmV0UGhhc2VFbGVtZW50ID0gKFxyXG4gICAgLy8gICAgIDxkaXY+XHJcbiAgICAvLyAgICAgICAgIDxoMT5QTEFDRSBZT1VSIEJFVDwvaDE+XHJcbiAgICAvLyAgICAgICAgIDxwIGlkPSdqZWxseWJlYW4tdG90YWwnPjwvcD5cclxuICAgIC8vICAgICAgICAgPGJ1dHRvbiBpZD0naW5jcmVhc2UtYmV0JyBvbkNsaWNrPXt0aGlzLmluY3JlYXNlfT5JbmNyZWFzZSBCZXQ8L2J1dHRvbj5cclxuICAgIC8vICAgICAgICAgPHAgaWQ9J2Rpc3BsYXktYmV0Jz57dGhpcy5zdGF0ZS5iZXR9PC9wPlxyXG4gICAgLy8gICAgICAgICA8YnV0dG9uIGlkPSdkZWNyZWFzZS1iZXQnIG9uQ2xpY2s9e3RoaXMuZGVjcmVhc2V9PkRlY3JlYXNlIEJldDwvYnV0dG9uPjxicj48L2JyPlxyXG4gICAgLy8gICAgICAgICA8YnV0dG9uIGlkPSdwbGFjZS1iZXQnIG9uQ2xpY2s9e3RoaXMuc3RhcnRHYW1lfT5QTEFDRSBCRVQ8L2J1dHRvbj5cclxuICAgIC8vICAgICA8L2Rpdj5cclxuICAgIC8vICk7XHJcblxyXG4gICAgcmVuZGVyKCl7XHJcbiAgICAgICAgcmV0dXJuKFxyXG4gICAgICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICA8aDE+UExBQ0UgWU9VUiBCRVQ8L2gxPlxyXG4gICAgICAgICAgICA8cCBpZD0namVsbHliZWFuLXRvdGFsJz48L3A+XHJcbiAgICAgICAgICAgIDxidXR0b24gaWQ9J2luY3JlYXNlLWJldCcgdHlwZT0nYnV0dG9uJyBvbkNsaWNrPXt0aGlzLmluY3JlYXNlfT5JbmNyZWFzZSBCZXQ8L2J1dHRvbj5cclxuICAgICAgICAgICAgPHAgaWQ9J2Rpc3BsYXktYmV0Jz57dGhpcy5zdGF0ZS5iZXR9PC9wPlxyXG4gICAgICAgICAgICA8YnV0dG9uIGlkPSdkZWNyZWFzZS1iZXQnIG9uQ2xpY2s9e3RoaXMuZGVjcmVhc2V9PkRlY3JlYXNlIEJldDwvYnV0dG9uPjxicj48L2JyPlxyXG4gICAgICAgICAgICA8YnV0dG9uIGlkPSdwbGFjZS1iZXQnIG9uQ2xpY2s9e3RoaXMuc3RhcnRHYW1lfT5QTEFDRSBCRVQ8L2J1dHRvbj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgICApO1xyXG4gICAgfVxyXG59Il19</script><script>'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Game = function (_React$Component) {
+    _inherits(Game, _React$Component);
+
+    function Game() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, Game);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Game.__proto__ || Object.getPrototypeOf(Game)).call.apply(_ref, [this].concat(args))), _this), _this.increaseBetButton = document.getElementById("increase-bet"), _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(Game, [{
+        key: 'render',
+        value: function render() {
+            return React.createElement(
+                'div',
+                null,
+                React.createElement('p', { id: 'print-bet' }),
+                React.createElement('p', { id: 'print-player-cards' }),
+                React.createElement('p', { id: 'print-player-total' }),
+                React.createElement('p', { id: 'player-bust' }),
+                React.createElement(
+                    'button',
+                    { id: 'hit', disabled: true },
+                    'HIT'
+                ),
+                React.createElement(
+                    'button',
+                    { id: 'stay', disabled: true },
+                    'STAY'
+                ),
+                React.createElement('p', { id: 'print-dealer-cards' }),
+                React.createElement('p', { id: 'print-dealer-total' }),
+                React.createElement('p', { id: 'dealer-bust' }),
+                React.createElement('p', { id: 'winner-circle' }),
+                React.createElement(
+                    'button',
+                    { id: 'play-again', disabled: true },
+                    'Play Again?'
+                ),
+                React.createElement('input', { type: 'submit' }),
+                React.createElement('script', { src: '../HW3/scripts/Deck.js' }),
+                React.createElement('script', { src: '../HW3/scripts/Dealer.js' }),
+                React.createElement('script', { src: '../HW3/scripts/Player.js' }),
+                React.createElement('script', { src: '../HW3/scripts/model.js' }),
+                React.createElement('script', { src: '../HW3/scripts/views.js' }),
+                React.createElement('script', { src: '../HW3/scripts/controller.js' })
+            );
+            function increase() {
+                console.log("Button clicked!");
+            }
+        }
+    }]);
+
+    return Game;
+}(React.Component);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkdhbWUuanMiXSwibmFtZXMiOlsiR2FtZSIsImluY3JlYXNlQmV0QnV0dG9uIiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50QnlJZCIsImluY3JlYXNlIiwiY29uc29sZSIsImxvZyIsIlJlYWN0IiwiQ29tcG9uZW50Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0lBQU1BLEk7Ozs7Ozs7Ozs7Ozs7O3NMQWtDRkMsaUIsR0FBb0JDLFNBQVNDLGNBQVQsQ0FBd0IsY0FBeEIsQzs7Ozs7aUNBakNaO0FBQ0osbUJBQ0k7QUFBQTtBQUFBO0FBT0ksMkNBQUcsSUFBRyxXQUFOLEdBUEo7QUFRSSwyQ0FBRyxJQUFHLG9CQUFOLEdBUko7QUFTSSwyQ0FBRyxJQUFHLG9CQUFOLEdBVEo7QUFVSSwyQ0FBRyxJQUFHLGFBQU4sR0FWSjtBQVdJO0FBQUE7QUFBQSxzQkFBUSxJQUFHLEtBQVgsRUFBaUIsY0FBakI7QUFBQTtBQUFBLGlCQVhKO0FBVzBDO0FBQUE7QUFBQSxzQkFBUSxJQUFHLE1BQVgsRUFBa0IsY0FBbEI7QUFBQTtBQUFBLGlCQVgxQztBQVlJLDJDQUFHLElBQUcsb0JBQU4sR0FaSjtBQWFJLDJDQUFHLElBQUcsb0JBQU4sR0FiSjtBQWNJLDJDQUFHLElBQUcsYUFBTixHQWRKO0FBZUksMkNBQUcsSUFBRyxlQUFOLEdBZko7QUFnQkk7QUFBQTtBQUFBLHNCQUFRLElBQUcsWUFBWCxFQUF3QixjQUF4QjtBQUFBO0FBQUEsaUJBaEJKO0FBaUJJLCtDQUFPLE1BQUssUUFBWixHQWpCSjtBQWtCSSxnREFBUSxLQUFJLHdCQUFaLEdBbEJKO0FBbUJJLGdEQUFRLEtBQUksMEJBQVosR0FuQko7QUFvQkksZ0RBQVEsS0FBSSwwQkFBWixHQXBCSjtBQXFCSSxnREFBUSxLQUFJLHlCQUFaLEdBckJKO0FBc0JJLGdEQUFRLEtBQUkseUJBQVosR0F0Qko7QUF1QkksZ0RBQVEsS0FBSSw4QkFBWjtBQXZCSixhQURKO0FBMkJBLHFCQUFTQyxRQUFULEdBQW1CO0FBQ2ZDLHdCQUFRQyxHQUFSLENBQVksaUJBQVo7QUFDSDtBQUNKOzs7O0VBaENjQyxNQUFNQyxTIiwiZmlsZSI6IkdhbWUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjbGFzcyBHYW1lIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50e1xyXG4gICAgcmVuZGVyKCl7XHJcbiAgICAgICAgcmV0dXJuKFxyXG4gICAgICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICAgICAgey8qIDxoMT5QTEFDRSBZT1VSIEJFVDwvaDE+XHJcbiAgICAgICAgICAgICAgICA8cCBpZD0namVsbHliZWFuLXRvdGFsJz48L3A+XHJcbiAgICAgICAgICAgICAgICA8YnV0dG9uIGlkPSdpbmNyZWFzZS1iZXQnIG9uQ2xpY2s9e2luY3JlYXNlfT5JbmNyZWFzZSBCZXQ8L2J1dHRvbj5cclxuICAgICAgICAgICAgICAgIDxwIGlkPSdkaXNwbGF5LWJldCc+MDwvcD5cclxuICAgICAgICAgICAgICAgIDxidXR0b24gaWQ9J2RlY3JlYXNlLWJldCcgPkRlY3JlYXNlIEJldDwvYnV0dG9uPjxicj48L2JyPlxyXG4gICAgICAgICAgICAgICAgPGJ1dHRvbiBpZD0ncGxhY2UtYmV0Jz5QTEFDRSBCRVQ8L2J1dHRvbj4gKi99XHJcbiAgICAgICAgICAgICAgICA8cCBpZD0ncHJpbnQtYmV0Jz48L3A+XHJcbiAgICAgICAgICAgICAgICA8cCBpZD0ncHJpbnQtcGxheWVyLWNhcmRzJz48L3A+XHJcbiAgICAgICAgICAgICAgICA8cCBpZD0ncHJpbnQtcGxheWVyLXRvdGFsJz48L3A+XHJcbiAgICAgICAgICAgICAgICA8cCBpZD0ncGxheWVyLWJ1c3QnPjwvcD5cclxuICAgICAgICAgICAgICAgIDxidXR0b24gaWQ9J2hpdCcgZGlzYWJsZWQ+SElUPC9idXR0b24+PGJ1dHRvbiBpZD0nc3RheScgZGlzYWJsZWQ+U1RBWTwvYnV0dG9uPlxyXG4gICAgICAgICAgICAgICAgPHAgaWQ9J3ByaW50LWRlYWxlci1jYXJkcyc+PC9wPlxyXG4gICAgICAgICAgICAgICAgPHAgaWQ9J3ByaW50LWRlYWxlci10b3RhbCc+PC9wPlxyXG4gICAgICAgICAgICAgICAgPHAgaWQ9J2RlYWxlci1idXN0Jz48L3A+XHJcbiAgICAgICAgICAgICAgICA8cCBpZD0nd2lubmVyLWNpcmNsZSc+PC9wPlxyXG4gICAgICAgICAgICAgICAgPGJ1dHRvbiBpZD0ncGxheS1hZ2FpbicgZGlzYWJsZWQ+UGxheSBBZ2Fpbj88L2J1dHRvbj5cclxuICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSdzdWJtaXQnPjwvaW5wdXQ+XHJcbiAgICAgICAgICAgICAgICA8c2NyaXB0IHNyYz0nLi4vSFczL3NjcmlwdHMvRGVjay5qcyc+PC9zY3JpcHQ+ICAgIFxyXG4gICAgICAgICAgICAgICAgPHNjcmlwdCBzcmM9Jy4uL0hXMy9zY3JpcHRzL0RlYWxlci5qcyc+PC9zY3JpcHQ+XHJcbiAgICAgICAgICAgICAgICA8c2NyaXB0IHNyYz0nLi4vSFczL3NjcmlwdHMvUGxheWVyLmpzJz48L3NjcmlwdD5cclxuICAgICAgICAgICAgICAgIDxzY3JpcHQgc3JjPScuLi9IVzMvc2NyaXB0cy9tb2RlbC5qcyc+PC9zY3JpcHQ+XHJcbiAgICAgICAgICAgICAgICA8c2NyaXB0IHNyYz0nLi4vSFczL3NjcmlwdHMvdmlld3MuanMnPjwvc2NyaXB0PlxyXG4gICAgICAgICAgICAgICAgPHNjcmlwdCBzcmM9Jy4uL0hXMy9zY3JpcHRzL2NvbnRyb2xsZXIuanMnPjwvc2NyaXB0PlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICApO1xyXG4gICAgICAgIGZ1bmN0aW9uIGluY3JlYXNlKCl7XHJcbiAgICAgICAgICAgIGNvbnNvbGUubG9nKFwiQnV0dG9uIGNsaWNrZWQhXCIpXHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG4gICAgXHJcbiAgICBpbmNyZWFzZUJldEJ1dHRvbiA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwiaW5jcmVhc2UtYmV0XCIpO1xyXG4gICAgXHJcbn0iXX0=</script><script>"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_React$Component) {
+    _inherits(App, _React$Component);
+
+    function App() {
+        _classCallCheck(this, App);
+
+        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    }
+
+    _createClass(App, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                null,
+                React.createElement(BetPhase, null),
+                React.createElement(Game, null)
+            );
+        }
+    }]);
+
+    return App;
+}(React.Component);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFwcC5qcyJdLCJuYW1lcyI6WyJBcHAiLCJSZWFjdCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztJQUFNQSxHOzs7Ozs7Ozs7OztpQ0FDTTtBQUNKLG1CQUNJO0FBQUE7QUFBQTtBQUNHLG9DQUFDLFFBQUQsT0FESDtBQUVHLG9DQUFDLElBQUQ7QUFGSCxhQURKO0FBUUg7Ozs7RUFWYUMsTUFBTUMsUyIsImZpbGUiOiJBcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjbGFzcyBBcHAgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnR7XHJcbiAgICByZW5kZXIoKXtcclxuICAgICAgICByZXR1cm4oXHJcbiAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgIDxCZXRQaGFzZSAvPlxyXG4gICAgICAgICAgICAgICA8R2FtZSAvPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICk7XHJcbiAgICB9XHJcbn0iXX0=</script><script>'use strict';
+
+ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0RE9NIiwicmVuZGVyIiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50QnlJZCJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsU0FBU0MsTUFBVCxDQUNJLG9CQUFDLEdBQUQsT0FESixFQUVJQyxTQUFTQyxjQUFULENBQXdCLE1BQXhCLENBRkoiLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJSZWFjdERPTS5yZW5kZXIoXHJcbiAgICA8QXBwIC8+LFxyXG4gICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKVxyXG4pOyJdfQ==</script></head>
+<body>
+    <div id="root"><div><div><h1>PLACE YOUR BET</h1><p id="jellybean-total"></p><button id="increase-bet" type="button">Increase Bet</button><p id="display-bet">86</p><button id="decrease-bet">Decrease Bet</button><br><button id="place-bet">PLACE BET</button></div><div><p id="print-bet"></p><p id="print-player-cards"></p><p id="print-player-total"></p><p id="player-bust"></p><button id="hit" disabled="">HIT</button><button id="stay" disabled="">STAY</button><p id="print-dealer-cards"></p><p id="print-dealer-total"></p><p id="dealer-bust"></p><p id="winner-circle"></p><button id="play-again" disabled="">Play Again?</button><input type="submit"><script src="./localhost_files/Deck.js.download"></script><script src="./localhost_files/Dealer.js.download"></script><script src="./localhost_files/Player.js.download"></script><script src="./localhost_files/model.js.download"></script><script src="./localhost_files/views.js.download"></script><script src="./localhost_files/controller.js.download"></script></div></div></div>
+    
+    <script type="text/babel" src="./localhost_files/BetPhase.js.download"></script>
+    <script type="text/babel" src="./localhost_files/Game.js.download"></script>
+    <script type="text/babel" src="./localhost_files/App.js.download"></script>
+    <script type="text/babel" src="./localhost_files/index.js.download"></script> 
+
+
+    <!-- <h1>PLACE YOUR BET</h1>
+    <p id='jellybean-total'></p>
+    <button id='increase-bet'>Increase Bet</button>
+    <p id='display-bet'>0</p>
+    <button id='decrease-bet' >Decrease Bet</button><br>
+    <button id='place-bet' style='margin-top: 10px;'>PLACE BET</button>
+    <p id='print-bet'></p>
+    <p id='print-player-cards'></p>
+    <p id='print-player-total'></p>
+    <p id='player-bust'></p>
+    <button id='hit' disabled>HIT</button><button id='stay' disabled>STAY</button>
+    <p id='print-dealer-cards'></p>
+    <p id='print-dealer-total'></p>
+    <p id='dealer-bust'></p>
+    <p id='winner-circle'></p>
+    <button id='play-again' disabled>Play Again?</button>
+    <script src='../HW3/scripts/Deck.js'></script>    
+    <script src='../HW3/scripts/Dealer.js'></script>
+    <script src='../HW3/scripts/Player.js'></script>
+    <script src='../HW3/scripts/model.js'></script>
+    <script src='../HW3/scripts/views.js'></script>
+    <script src='../HW3/scripts/controller.js'></script> -->
+</body></html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Blog: Microservices
+        </title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body style='background-color:black; color: lightskyblue'>
+        <div>
+            <nav class='navbar navbar-expand-lg bg-dark justify-content-center'>
+                <ul class='nav navbar-nav ml-auto'>
+                        <li class='nav-item'>
+                            <a class='nav-link' href="/index.html"> HOME </a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+        <div class="container-fluid p-3 my-3 bg-primary text-white">
+            <h1 class='text-center'> THE RISE OF THE CONTAINERS!!!</h>
+        </div>
+        <div style="padding-left: 25px">
+            <div class='row'>
+                <div class='col-lg-8'>
+                    <h2>Intro</h2>
+                    <p>
+                        Companies have been looking for new ways of dealing with the influx of online users now that more and 
+                        more people are finding themselves online to conveniently complete a myriad of task. Anything from binge 
+                        watching a good TV show to shopping for groceries online, there has been a steady increase of users being 
+                        drawn to the convince of online services and, thusly, a need to efficiently manage users has given rise to 
+                        the idea of microservices and containers. This new technique of web applications has kept the need for a 
+                        significant increase in computing power at bay. 
+                    </p>
+                </div>
+                <div class='col-lg-4'>
+                    <img src='../images/online-users.jpg'>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col-lg-8'>
+                    <p>
+                        Gone are the days of virtual machines as a way of dealing with multiple users who are using a webserver at the <br> 
+                        same time. Virtual machines are a way of allowing many users to use a server as once. It works by spinning up a <br> 
+                        virtual machine any time a user is trying to access a web application, such as Netflix. This way of handling multiple <br> 
+                        users required more resources since each user’s virtual machine would use the entire code base, which can be millions <br> 
+                        of lines of code, even if a user only wanted to do something simple such as make a payment. This approach became more <br>
+                        useless as more users since that would mean more virtual machines running on a server at any given time making it <br>
+                        more difficult for the server to keep up. This is where microservices comes into play. 
+                    </p>
+                </div>
+                <div class='col-lg-4'>
+                    <img src='../images/virtualOS.png'>
+                </div>
+            </div>
+
+            <div class='row'>
+                    <div class='col-lg-8'>
+                        <p>
+                            Microservices takes a much more resource conservative approach to the problem of more users and the resource cap <br>
+                            of a server.  Microservices are a type of container deployment that allows supports the concept of microservices. <br>
+                            Each container can be made to do a specific task which means a lot less code to be run on the server, typically a <br>
+                            fraction of the entire code base. This means that if a user only wants to do a simple task, such as pay a bill, <br>
+                            rate a movie, or turn the volume up on a video, a container specific to the task will be generated to execute the <br>
+                            code. Typically, at any given instance in time, a user would only need one container.<br>
+                        </p>
+                    </div>
+                    <div class='col-lg-4'>
+                        <img src='../images/vm-vs-docker.png'>
+                    </div>
+                </div>
+
+                <div class='row'>
+                        <div class='col-lg-8'>
+                            <p>
+                                Although this solution is great, the new task of tracking what tasks a container perform and any containers it may<br>
+                                depend on becomes a problem. Google developed a container management system called Kubernetes which was tailored to<br>
+                                solve to help make managing containers a lot simpler. It also allows certain services to be added, removed, or <br>
+                                edited without affecting the entire program or system. Another added benefit is that errors are easier to track <br>
+                                since containers typically only do a specific job.
+                            </p>
+                        </div>
+                        <div class='col-lg-4'>
+                            <img src='../images/Kubernetes-logo.png'>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+

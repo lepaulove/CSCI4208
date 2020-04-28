@@ -1,0 +1,37 @@
+class Game extends React.Component{
+    render(){
+        return(
+            <div>
+                {/* <h1>PLACE YOUR BET</h1>
+                <p id='jellybean-total'></p>
+                <button id='increase-bet' onClick={increase}>Increase Bet</button>
+                <p id='display-bet'>0</p>
+                <button id='decrease-bet' >Decrease Bet</button><br></br>
+                <button id='place-bet'>PLACE BET</button> */}
+                <p id='print-bet'></p>
+                <p id='print-player-cards'></p>
+                <p id='print-player-total'></p>
+                <p id='player-bust'></p>
+                <button id='hit' disabled>HIT</button><button id='stay' disabled>STAY</button>
+                <p id='print-dealer-cards'></p>
+                <p id='print-dealer-total'></p>
+                <p id='dealer-bust'></p>
+                <p id='winner-circle'></p>
+                <button id='play-again' disabled>Play Again?</button>
+                <input type='submit'></input>
+                <script src='../HW3/scripts/Deck.js'></script>    
+                <script src='../HW3/scripts/Dealer.js'></script>
+                <script src='../HW3/scripts/Player.js'></script>
+                <script src='../HW3/scripts/model.js'></script>
+                <script src='../HW3/scripts/views.js'></script>
+                <script src='../HW3/scripts/controller.js'></script>
+            </div>
+        );
+        function increase(){
+            console.log("Button clicked!")
+        }
+    }
+    
+    increaseBetButton = document.getElementById("increase-bet");
+    
+}

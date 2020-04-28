@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<p>There is a number between 000 - 999</p>
+		<p id="attempts">You have 10 guesses.</p>
+		<span>Enter a guess:</span>
+
+		<div>
+			<input type="button" value=' + ' id="up-100s">
+			<input type="button" value=' + ' id="up-10s">
+			<input type="button" value=' + ' id="up-1s">
+		</div>
+
+		<div>
+			<input disabled type="number" min="0" max="9" value="0" id="digit-100s">
+			<input disabled type="number" min="0" max="9" value="0" id="digit-10s">
+			<input disabled type="number" min="0" max="9" value="0" id="digit-1s">
+		</div>
+
+		<div>
+			<input type="button" value=' - ' id="down-100s">
+			<input type="button" value=' - ' id="down-10s">
+			<input type="button" value=' - ' id="down-1s">
+		</div>
+
+		<input type="button" id="guess-button" value="Submit"> 
+
+		<ul id="clue"></ul>
+
+		<script src='../puzzle-game/Scripts/Guess.js'></script>
+		<script src='../puzzle-game/Scripts/controllers.js'></script>
+		<script src='../puzzle-game/Scripts/model.js'></script>
+		<script src='../puzzle-game/Scripts/views.js'></script>
+	</body>
+</html> 

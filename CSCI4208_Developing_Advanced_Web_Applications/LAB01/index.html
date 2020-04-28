@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LePaul's Professional Portolio</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            section:before{
+                height: 54px;
+                content:"";
+                display:block;
+            }
+
+            section{
+                min-height:100vh;
+            }
+
+            #section-showcase{
+                background-image: url();
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color:black 
+            }
+
+            html{
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav id="top-navbar" class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark'>
+            <a class='navbar-brand' href="#section-showcase"><strong> PORTFOLIO NAME </strong></a>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#menu'>
+                <span class='navbar-toggler-icon'></span>
+            </button>
+            <div class='collapse navbar-collapse' id='menu'>
+                    <ul class='nav navbar-nav ml-auto'>
+                        <li class='nav-item'>
+                            <a class='nav-link' href="#section-home"> HOME </a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href="#section-about"> ABOUT </a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href="#section-projects"> PROJECTS </a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href="#section-blog"> BLOG </a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href="#section-contact"> CONTACT </a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        <section id="section-showcase" class='jumbotron d-flex aligh-items-center'>
+            <div class='container text-center text-light'>
+                <h1> SHOWCASE </h1>
+                <p> This section is to showcase all of my acheivements </p>
+            </div>
+        </section>
+        
+        <aside id="side-bar" class='bg-dark'>
+            <div class='bg-dark text-light float-right col-4 pt-4 mt-4'>
+                <h3> NEWS: </h3>
+                <P> Real time info about projects I am currently/actively working on </P>
+            </div>
+        </aside>
+        <section id="section-home" class='bg-danger p-1 container-fluid'>
+            <h1> WELCOME </h1>
+            <hr>
+            <p> 
+                WELCOME AND THANKS FOR STOPPING BY! <br>
+                The purpose of this webpage is to showcase the exciting<br> 
+                things I have learned and projects I have worked on. Additionally,<br>
+                I will also use this page to talk about the new and exciting things<br>
+                I am currently learning!
+            </p>
+        </section>
+        <section id="section-about" class='bg-primary container-fluid pb-1'>
+            <h1> ABOUT </h1>
+            <hr>
+
+            <div class='row'>
+                <div class='col-lg-2 col-small-4'>
+                    <img src='images/0.jpeg' class='img-fluid'>
+                </div>
+                <div class='col-lg-10 col-sm-8'>
+                    <h4> LePaul Love </h4>
+                    <p> 
+                        I am currently a undergraduate college senior majoring in the  <br>
+                        the exciting filed of Computer Science. After graduating, I look <br>
+                        forward to working as a Software Developer with a company who will <br>
+                        improve my skills by challenges in an exciting career of Software <br>
+                        Development. 
+                    </p>
+                </div>
+            </div>
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th colspan='2' class='text-center'> TECHNICAL SKILLS </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th> PROGRAMMING TOOLS </th>
+                        <td> JAVA JAVASCRIPT </td>
+                    </tr>
+                    <tr>
+                        <th> FRONTEND TOOLS </th>
+                        <td> HTML, CSS </td>
+                    </tr>
+                    <tr> 
+                        <th> DATABASE TOOLS </th>
+                        <td> MONGODB, MONGOOSE, SQL </td>
+                    <tr>
+                        <th> VERSION CONTROL & DEPLOYMENT TOOLS </th>
+                        <td> GIT, GITHUB, GITLAB </td>
+                    </tr>
+                    <tr>
+                        <th>ARCHTECTURE AND DESIGN </th>
+                        <td> OOP, MEAN STACK, REST, AGILE, TDD </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="section-projects" class='bg-success container-fluid'>
+            <h1> PROJECTS </h1>
+            <hr>
+            <p> SUMMARY OF ALL THE PROJECTS YOU HAVE WORKED ON </p>
+            <div class='container'>
+                <div id='projects' class='card-deck text-center'>
+
+                    <a class='card bg-dark btn' href='#' traget="_blank">
+                        <div class='card-header'>
+                            <p class='text-light'> Android Applicaion </p>
+                        </div>
+                        <img class='card-img-top' src='images/Screenshot_1568723939.png'>
+                        <div class='card-body'>
+                            <h4 class='card-title text-light'> Combat Calculator </h4>
+                        </div>
+                        <div class='card-footer'>
+                            <small class='text-muted'> by LePaul Love</small>
+                        </div>
+                    </a>
+
+
+                    <a class='card bg-dark btn' href='#' traget="_blank">
+                        <div class='card-header'>
+                            <p class='text-light'> Android/iOS Application </p>
+                        </div>
+                        <img class='card-img-top' src='images/FQF_coming_soon.png'>
+                        <div class='card-body'>
+                            <h4 class='card-title text-light'> French Quater Fest </h4>
+                        </div>
+                        <div class='card-footer'>
+                            <small class='text-muted'> by LePaul Love</small>
+                        </div>
+                    </a>
+
+
+                    <a class='card bg-dark btn' href='#' traget="_blank">
+                        <div class='card-header'>
+                            <p class='text-light'> PROJECT </p>
+                        </div>
+                        <img class='card-img-top' src='images/GELogo_Blue_CMYK_08b35dd1-9467-481d-9bf9-d0045a322953-prv.jpg'>
+                        <div class='card-body'>
+                            <h4 class='card-title text-light'> PROJECT NAME </h4>
+                        </div>
+                        <div class='card-footer'>
+                            <small class='text-muted'> by LePaul Love</small>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="section-blog" class='bg-warning pb-1 container-fluid'>
+            <h1> BLOG </h1>
+            <hr>
+            <p> 
+                This blog is a place where I will discuss mostly <br>
+                random topics in the realm of Technology. I will <br>
+                also use this blog as a place to talk about new <br>
+                things I'm working on and other exciting news.
+
+             </p>
+            <hr>
+            <article class='container'>
+                <h3> THE ERA OF CONTAINERS </h3>
+                <small> LePaul Love <br> Date: 1/23/2020 </small>
+                <p> Micro Services </p>
+                <a class='btn btn-outline-dark' href="blog-posts/post1.html">READ MORE</a>
+                <hr>
+            </article>
+        </section>
+        <section id="section-contact" class='bg-secondary container-fluid'>
+            <h1> CONTACT </h1>
+            <hr>
+            <h4 class='text-center'> SEND MESSAGE </h4>
+            <form>
+                <div class='form-group'>
+                    <input class='form-control' type="text" id="name" placeholder="YOUR NAME">
+                </div>
+                <div class='form-group'>
+                    <input class='form-control' type="email" id="email" placeholder="YOUR EMAIL">
+                </div>
+                <div class='form-group'>
+                    <input class='form-control' type="subject" id="subject" placeholder="SUBJECT">
+                </div>
+                <div class='form-group'>
+                    <textarea class='form-control' rows="4" id="message" placeholder="MESSAGE"></textarea>
+                </div>
+                <button type="submit"> SUBMIT </button>
+            </form>
+        </section>
+        <footer class='bg-light'>
+            <div class='container text-muted text-center'>
+                <p> COPYRIGHT &copy; 2020 LePaul Love </p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
